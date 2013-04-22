@@ -1,0 +1,11 @@
+gen/
+assets/
+bin/
+libs/
+res/
+AndroidManifest.xml
+project.properties
+.gitignore
+.classpath
+.project
+
