@@ -69,6 +69,15 @@ public class KLog {
 	}
 	
 	/**
+	 * Debug class with message
+	 * Using the default tag to log messages, spit out the class they're originating from as well.
+	 * @param classInstance the class the logging is coming from
+	 * @param message the message to display
+	 */
+	public static void dc(Object classInstance, String message){
+		m(d, settings.getDefaultTag(), "["+classInstance.getClass().getCanonicalName()+"] "+message);
+	}
+	/**
 	 * Message method responsible for adding a log message to Android's logging system as defined
 	 * in the settings class.
 	 * @param type either d, e, i which are defined as constants above.
